@@ -6,7 +6,7 @@ import MapMods from "../MapMods.js"
 export default function Modifiers(props){
     
     const styles = {
-        backgroundColor: props.selected? "green" : "white"
+        backgroundColor: props.selected? "#48b1bf" : 'transparent'
     }
 
     return(

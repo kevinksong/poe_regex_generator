@@ -1,14 +1,12 @@
 import React from 'react'
 
-export default function Header(props){
 
-    const [generated, setGenerated]=React.useState(props)
-    
-    React.useEffect(function(){
-        setGenerated(props)
-    },generated)
+export default function Header(){
 
     return(
-        <div>{generated.selected && <h1>{generated.regex}</h1>}</div>
+        <div>
+            <h1 className="header-title">Path of Exile Regex Generator</h1>
+            <h3 className="header-name">Kevin Song</h3>
+        </div>
     )
 }

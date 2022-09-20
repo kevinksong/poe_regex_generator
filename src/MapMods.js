@@ -5,7 +5,7 @@ export default{
             id:0,
             regex: "yi",
             ranking: "Good",
-            selected: true
+            selected: false
         },
         {
             value: "Monsters' skills Chain 2 additional times",

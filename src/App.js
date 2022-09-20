@@ -16,11 +16,8 @@ export default function App() {
   ))
 
   
-  // const showRegex =mods.map(mod=>(
-  //   <Header regex={mod.regex} selected={mod.selected}/>
-  // ))
 
-  const test= mods.filter(mod=>mod.selected).map(elem=>elem.regex).join("|")
+  const showRegex= mods.filter(mod=>mod.selected).map(elem=>elem.regex).join("|")
   
   function handleClick(id){
     setMods(oldMods=>oldMods.map(mod=>{
@@ -31,8 +28,8 @@ export default function App() {
 
   return (
     <div className="container">
-      {/* {showRegex} */}
-      {test}
+      <Header/>
+      {showRegex}
       {modElements}
     </div>
   )
